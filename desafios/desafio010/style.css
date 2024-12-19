@@ -1,0 +1,113 @@
+@charset "UTF-8";
+@font-face {
+    font-family: face;
+    src: url('fontes/idroid.otf');
+}
+
+*{
+    width: 100%;
+    
+}
+
+body{
+    background-color: rgb(132, 183, 132);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header > h1, p{
+    text-align: center;
+}
+
+header > h1{
+    padding-top: 20px;
+}
+
+header{
+    background-image: linear-gradient(to top, rgb(7, 72, 7),rgb(158, 187, 158));
+    padding-bottom: 5px;
+    border: 1px solid;
+    
+    
+}
+
+nav > a{
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+    padding-bottom: 5px;
+}
+
+nav > a:hover{
+    background-color: rgb(219, 219, 107);
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+main{
+    width: 800px;
+    text-align: center;
+    margin: auto;
+    background-color: white;
+    padding-top: 5px;
+}
+
+main > h2, h3{
+    font-family: 'face';
+    text-align: left;
+    padding-left: 10px;
+}
+
+main > h3{
+    background-color: rgba(105, 155, 105, 0.715);
+    border: 1px solid;
+    margin-left: 15px;
+    width: auto;
+}
+
+main > p{
+    text-align: left;
+    margin-left: 10px;
+    text-indent: 2px;
+    text-size-adjust: 10px
+    ;
+}
+
+.quadro{
+    background-color: lightgreen;
+    width: 700px;
+    
+    text-indent: 20px;
+    margin: auto;
+    text-align: justify;
+}
+
+.faixa{
+    background-color: green;
+    padding: 5px;
+    width: auto;
+    border-radius: 5px;
+}
+
+footer>p{
+    padding: 0px;
+    margin: 0px;
+}
+footer{
+    background-color: green;
+    padding: 10px;
+}
+
+.alinhar{
+    text-align: left justify;
+}
+
+section > p{
+    text-align: justify;
+    padding: 10px;
+    width: auto;    /*O texto acompanhará o tamanho do quadro*/
+    
+}
+
+section{
+    width: 700px;
+}

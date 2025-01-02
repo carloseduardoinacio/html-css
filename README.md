@@ -3,4 +3,4 @@
 
 Aplicando na prática meus conhecimentos em HTML e CSS
 
-<a href="https://carloseduardoinacio.github.io/html-css/exercicios/projeto-desafio10/android.html">Executar a projeto</a>
+<a href="https://carloseduardoinacio.github.io/html-css/exercicios/projeto-desafio10/android.html">Executar o projeto</a>

@@ -12,6 +12,17 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            /*Para o cabeçalho ficar fixo*/
+            position: relative;
+        }
+
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;  /*PESO DA FONTE*/
+            padding: 10px;
+            background-color: blueviolet;
+            color: white;   /*COR DA LETRA*/
+            
         }
 
         td, th {
@@ -22,6 +33,19 @@
         thead, tfoot {
             background-color: gray;
             color: white;
+        }
+
+        /*Para manter o cabeçalho fixo*/
+        thead > tr >th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
+        /*O 2n OU ODD SIGNIFICA QUE DE 2 EM 2 A COR SELECIONADA ABAIXO APARECERÁ DANDO EFEITO ZEBRADO*/
+        /*ODD -> IMPAR  EVEN -> PAR*/
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
         }
 
         td.num {
@@ -35,7 +59,8 @@
     <h1>Uso de tabelas grandes</h1>
     <!--
         ANATOMIA PARA TABELAS GRANDES
-        table
+        TABLE
+            CAPTION -> LEGENDA DA TABELA
             THEAD
                 TR, TD, TH
             TBODY
@@ -44,10 +69,12 @@
                 TR, TD, TH
     -->
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+    <!-- SCOPE É USADO NA TAG TH ONDE COL É PARA DADOS QUE ESTAO NA VERTICAL(COLUNA) E ROW É PARA DADOS NA HORIZONTAL(LINHA) -->
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -163,7 +190,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>212 583 720</strong></td>
             </tr>
         </tfoot>

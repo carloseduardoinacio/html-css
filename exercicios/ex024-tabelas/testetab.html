@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela semanal</title>
+    <style>
+        table{
+            width: 1000px;
+            border-collapse: collapse;
+        }
+
+        thead{
+            background-color: lightgray;
+        }
+
+        tfoot > td{
+            text-align: center;
+            width: 1000px;
+            
+        }
+
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+            
+        }
+
+        .centro{
+            text-align: center;
+        }
+
+        #intervalo{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Horário</th>
+                <th>Segunda-Feira</th>
+                <th>Terça-Feira</th>
+                <th>Quarta-Feira</th>
+                <th>Quinta-Feira</th>
+                <th>Sexta-Feira</th>
+                <th>Sábado</th>
+                <th>Domingo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>08:00/10:00</td>
+                <td class="centro">Matemática</td>
+                <td class="centro">Português</td>
+                <td class="centro">Inglês</td>
+                <td class="centro">História</td>
+                <td class="centro">Geografia</td>
+                <td class="centro">Filosofia</td>
+                <td class="centro">Descanso</td>
+            </tr>
+            <tr>
+                <td id="intervalo">10:00/10:30</td>
+                <td class="centro" id="intervalo">Intervalo</td>
+                <td class="centro" id="intervalo">Intervalo</td>
+                <td class="centro" id="intervalo">Intervalo</td>
+                <td class="centro" id="intervalo">Intervalo</td>
+                <td class="centro" id="intervalo">Intervalo</td>
+                <td class="centro" id="intervalo">Intervalo</td>
+                <td class="centro" id="intervalo">Descanso</td>
+            </tr>
+            <tr>
+                <td>10:30/12:00</td>
+                <td class="centro">Física</td>
+                <td class="centro">Química</td>
+                <td class="centro">Filosofia</td>
+                <td class="centro">Matemática</td>
+                <td class="centro">Arte</td>
+                <td class="centro">Ed. Física</td>
+                <td class="centro">Descanso</td>
+            </tr>
+            <tr>
+                <td>13:00/14:00</td>
+                <td class="centro">História</td>
+                <td class="centro">Biologia</td>
+                <td class="centro">Química</td>
+                <td class="centro">Sociologia</td>
+                <td class="centro">Física</td>
+                <td class="centro">Arte</td>
+                <td class="centro">Descanso</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="8" style="text-align: center;">Horário das Aulas</td>
+                
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

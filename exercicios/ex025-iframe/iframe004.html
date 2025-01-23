@@ -3,43 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercitando com iframe</title>
-    <style>
-        body {
-            font: normal 20pt black;
-        }
-
-        li {
-            list-style-type: none;
-        }
-
-        iframe {
-            width: 95vw;
-            height: 300px;
-            display: block;
-            margin: auto;
-            border: 2px solid blueviolet;
-        }
-    </style>
+    <title>iframes</title>
 </head>
 <body>
-    <h1>Testando meus conhecimentos</h1>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, fugiat alias expedita architecto voluptatem, quod esse repudiandae id autem excepturi ab voluptate. Ad esse soluta id expedita ducimus, commodi cupiditate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa eligendi adipisci incidunt. Exercitationem vel et quos quia alias illum aspernatur quo error cupiditate, neque, similique totam ea qui aut ipsum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni quo cumque sint dolorum dolores officiis tenetur aperiam, repudiandae fuga, labore odio maxime, quibusdam non explicabo facilis! Ea, ex quae! Eius.</p>
+    <h1>Meu site principal</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, repellat delectus ab quo vero non impedit tempora cumque suscipit deserunt repudiandae veniam quam, modi consequuntur quisquam ad itaque unde nisi!</p>
 
-    <ul >
-        <li><a href="paginas-extras/pg001.html" target="frame">Opção 1</a></li>
-        <li><a href="paginas-extras/pg002.html" target="frame">Opção 2</a></li>
-        <li><a href="paginas-extras/pg003.html" target="frame">Opção 3</a></li>
-    </ul>
-
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit magnam ut excepturi distinctio unde? Odio, sit saepe! Reprehenderit provident, magni laboriosam architecto sit et nisi ipsum? Obcaecati perferendis similique assumenda? Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quos doloribus voluptatibus. Cum suscipit voluptas recusandae nihil maiores obcaecati, atque voluptatibus, soluta minima vel dolorem pariatur. Reprehenderit omnis deserunt veritatis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio voluptates quisquam ab maxime corporis commodi vitae nam magnam laborum sapiente fugit voluptas ipsum, praesentium a veniam in assumenda vel quis!</p>
-
-    <iframe name="frame" src="">
-
-        <p>A página não pode ser carregada</p>
-
+    <!--A configuração sandbox cria uma proteção-->
+    <iframe src="paginas-extras/pg004.html" referrerpolicy="no-referrer-when-downgrade" sandbox="sandbox">
+        Seu navegador não é compatível
     </iframe>
 
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci dignissimos aspernatur ratione reiciendis doloribus dolorum deserunt autem dolorem deleniti libero, obcaecati hic dolor tempore ad numquam nisi eos. Sit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime expedita consequatur saepe quasi dolor ullam eveniet ratione tempora, beatae, adipisci sint nostrum natus vero. Laborum recusandae sed ipsum enim atque.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quis eius, quibusdam tempore tempora, obcaecati molestiae reprehenderit praesentium qui harum temporibus laudantium sapiente quod, cum corrupti fugit? Molestiae, iure! Tempore.</p>
 </body>
 </html>
